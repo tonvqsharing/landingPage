@@ -1,0 +1,415 @@
+[2021-06-07 07:22:32] local.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php:608)
+[stacktrace]
+#0 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(659): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(255): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(92): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 E:\\laragon\\www\\landingPage\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2021-06-09 02:27:05] local.ERROR: rename(E:\laragon\www\landingPage\bootstrap\cache\pac9172.tmp,E:\laragon\www\landingPage\bootstrap\cache\packages.php): Access is denied. (code: 5) {"exception":"[object] (ErrorException(code: 0): rename(E:\\laragon\\www\\landingPage\\bootstrap\\cache\\pac9172.tmp,E:\\laragon\\www\\landingPage\\bootstrap\\cache\\packages.php): Access is denied. (code: 5) at E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php:211)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'rename(E:\\\\larag...', 'E:\\\\laragon\\\\www\\\\...', 211, Array)
+#1 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(211): rename('E:\\\\laragon\\\\www\\\\...', 'E:\\\\laragon\\\\www\\\\...')
+#2 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(181): Illuminate\\Filesystem\\Filesystem->replace('E:\\\\laragon\\\\www\\\\...', '<?php return ar...')
+#3 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(136): Illuminate\\Foundation\\PackageManifest->write(Array)
+#4 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\PackageDiscoverCommand.php(32): Illuminate\\Foundation\\PackageManifest->build()
+#5 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Console\\PackageDiscoverCommand->handle(Object(Illuminate\\Foundation\\PackageManifest))
+#6 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#9 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(614): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#10 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#11 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Command\\Command.php(288): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#12 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(974): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(291): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\PackageDiscoverCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(92): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 E:\\laragon\\www\\landingPage\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 {main}
+"} 
+[2021-06-09 02:34:54] local.ERROR: Command "make:link" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test
+    storage:link {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:link\" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test
+    storage:link at E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php:678)
+[stacktrace]
+#0 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(255): Symfony\\Component\\Console\\Application->find('make:link')
+#1 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(92): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\laragon\\www\\landingPage\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2021-06-09 02:41:40] local.ERROR: Command "make" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make\" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test at E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php:678)
+[stacktrace]
+#0 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(255): Symfony\\Component\\Console\\Application->find('make')
+#1 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(92): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\laragon\\www\\landingPage\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2021-06-09 02:41:41] local.ERROR: Command "make" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make\" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test at E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php:678)
+[stacktrace]
+#0 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(255): Symfony\\Component\\Console\\Application->find('make')
+#1 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(92): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\laragon\\www\\landingPage\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2021-06-09 02:41:43] local.ERROR: Command "make" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make\" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test at E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php:678)
+[stacktrace]
+#0 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(255): Symfony\\Component\\Console\\Application->find('make')
+#1 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(92): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\laragon\\www\\landingPage\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2021-06-09 02:41:55] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ (SQL: select * from information_schema.tables where table_schema = database\dbLandingPage.sqlite and table_name = migrations and table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ (SQL: select * from information_schema.tables where table_schema = database\\dbLandingPage.sqlite and table_name = migrations and table_type = 'BASE TABLE') at E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:685)
+[stacktrace]
+#0 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(645): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(353): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\MySqlBuilder.php(44): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(645): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(106): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(77): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#7 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(578): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#8 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(94): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#9 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#10 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#11 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#12 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#13 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(614): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#14 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#15 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Command\\Command.php(288): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#16 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#17 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(974): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(291): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(92): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 E:\\laragon\\www\\landingPage\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 {main}
+
+[previous exception] [object] (PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:70)
+[stacktrace]
+#0 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(70): PDO->__construct('mysql:host=127....', 'forge', '', Array)
+#1 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'forge', '', Array)
+#2 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(184): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(956): call_user_func(Object(Closure))
+#6 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(991): Illuminate\\Database\\Connection->getPdo()
+#7 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(419): Illuminate\\Database\\Connection->getReadPdo()
+#8 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(345): Illuminate\\Database\\Connection->getPdoForSelect(true)
+#9 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(678): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from i...', Array)
+#10 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(645): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#11 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(353): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#12 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\MySqlBuilder.php(44): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#13 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#14 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(645): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#15 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(106): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#16 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(77): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#17 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(578): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#18 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(94): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#19 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#20 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#21 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#22 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#23 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(614): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#24 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#25 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Command\\Command.php(288): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#26 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#27 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(974): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(291): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(92): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 E:\\laragon\\www\\landingPage\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 {main}
+"} 
+[2021-06-09 02:42:23] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ (SQL: select * from information_schema.tables where table_schema = ./database/dbLandingPage.sqlite and table_name = migrations and table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ (SQL: select * from information_schema.tables where table_schema = ./database/dbLandingPage.sqlite and table_name = migrations and table_type = 'BASE TABLE') at E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:685)
+[stacktrace]
+#0 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(645): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(353): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\MySqlBuilder.php(44): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(645): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(106): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(77): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#7 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(578): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#8 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(94): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#9 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#10 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#11 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#12 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#13 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(614): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#14 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#15 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Command\\Command.php(288): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#16 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#17 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(974): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(291): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(92): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 E:\\laragon\\www\\landingPage\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 {main}
+
+[previous exception] [object] (PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:70)
+[stacktrace]
+#0 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(70): PDO->__construct('mysql:host=127....', 'forge', '', Array)
+#1 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'forge', '', Array)
+#2 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(184): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(956): call_user_func(Object(Closure))
+#6 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(991): Illuminate\\Database\\Connection->getPdo()
+#7 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(419): Illuminate\\Database\\Connection->getReadPdo()
+#8 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(345): Illuminate\\Database\\Connection->getPdoForSelect(true)
+#9 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(678): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from i...', Array)
+#10 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(645): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#11 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(353): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#12 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\MySqlBuilder.php(44): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#13 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#14 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(645): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#15 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(106): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#16 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(77): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#17 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(578): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#18 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(94): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#19 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#20 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#21 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#22 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#23 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(614): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#24 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#25 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Command\\Command.php(288): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#26 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#27 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(974): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(291): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(92): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 E:\\laragon\\www\\landingPage\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 {main}
+"} 
+[2021-06-09 03:00:05] local.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php:608)
+[stacktrace]
+#0 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(659): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(255): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 E:\\laragon\\www\\landingPage\\vendor\\symfony\\console\\Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(92): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\laragon\\www\\landingPage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 E:\\laragon\\www\\landingPage\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
