@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    @include('frontend.sections.nav')
+    @include('frontend.sections.nav', ['links' => $links])
     @include('frontend.sections.hero')
     @include('frontend.sections.features')
     @include('frontend.sections.pricing')
